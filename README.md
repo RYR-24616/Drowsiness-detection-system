@@ -47,3 +47,5 @@ The system monitors eye activity in real time, and if eyes remain closed for mor
 - NumPy
 - playsound (audio alerts)
 - threading (non-blocking audio execution)
+
+DATASET- https://drive.google.com/drive/folders/1ixP6C7wiLs8lO71T5QGUIJSBKKX56u7B?usp=drive_link

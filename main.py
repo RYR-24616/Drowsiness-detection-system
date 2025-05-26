@@ -7,8 +7,10 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.utils import image_dataset_from_directory
 import os 
 
-train_dir = r"C:\Users\ryash\OneDrive\Desktop\data science and shi\data\train"
-test_dir = r"C:\Users\ryash\OneDrive\Desktop\data science and shi\data\test"
+train_dir = r"train" #insert your path here
+
+test_dir = r"test" #insert your path here
+
 
 IMG_SIZE = (96, 96) 
 BATCH_SIZE = 32
@@ -63,6 +65,7 @@ model.compile(optimizer=Adam(learning_rate=0.0001),
 # Train Model
 model.fit(train_ds, validation_data=test_ds, epochs=10)
 
-save_path = r"C:\Users\ryash\OneDrive\Documents\Data Science project\Drowsy_detection\eye_state_mobilenetv2_model.h5"
+save_path = r"eye_state_mobilenetv2_model.h5" #insert your path here
+
 model.save(save_path)
 print(f"Model saved to: {save_path}")

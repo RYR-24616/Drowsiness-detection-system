@@ -7,7 +7,7 @@ import threading
 import time
 
 # === Load Trained Model ===
-model_path = r"C:\Users\ryash\OneDrive\Documents\Data Science project\Drowsy_detection\eye_state_mobilenetv2_model.h5"
+model_path = r"eye_state_mobilenetv2_model.h5" #insert your path here
 model = tf.keras.models.load_model(model_path)
 IMG_SIZE = (96, 96)
 import pygame
@@ -16,7 +16,7 @@ import pygame
 pygame.mixer.init()
 
 # Load sound
-ALERT_SOUND_PATH = r"C:\Users\ryash\OneDrive\Documents\Data Science project\Drowsy_detection\alert.mp3"
+ALERT_SOUND_PATH = r"alert.mp3" #insert your path here
 
 def play_alert():
     try:
@@ -26,7 +26,8 @@ def play_alert():
         print("Error playing alert sound:", e)
 
 # === Sound Path ===
-ALERT_SOUND_PATH = r"C:\Users\ryash\OneDrive\Documents\Data Science project\Drowsy_detection\alert.mp3"
+ALERT_SOUND_PATH = r"alert.mp3" #insert your path here
+
 
 # === Initialize MTCNN ===
 detector = MTCNN()

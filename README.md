@@ -1,6 +1,6 @@
 # Drowsiness-detection-system
 Real-time driver drowsiness detection using CNN (MobileNetV2), OpenCV, and alert system
-## 📌 Project Description
+## Project Description
 
 This project uses a custom-trained MobileNetV2 CNN model to detect whether a driver's eyes are open or closed using webcam input. It integrates face and eye detection using OpenCV, and raises alerts with audio and visual cues when drowsiness is detected.
 
@@ -8,7 +8,7 @@ The system monitors eye activity in real time, and if eyes remain closed for mor
 
 ---
 
-## ⚠️ Problems Faced & How They Were Solved
+## Problems Faced & How They Were Solved
 
 ### 1. **Real-time Performance with Model Lag**
 - **Problem**: Initial model prediction was slow and caused webcam lag.
@@ -32,15 +32,15 @@ The system monitors eye activity in real time, and if eyes remain closed for mor
 
 ---
 
-## 🧠 Best Practices for Optimal Model Performance
+## Best Practices for Optimal Model Performance
 
-- ✅ Keep the camera **at eye level** or **slightly above** for best visibility of the eyes.
-- ✅ Ensure **adequate lighting** and **avoid occlusion** (e.g., hands/glasses).
-- ✅ Use a **clean webcam lens** to avoid blurring or misclassification.
+-  Keep the camera **at eye level** or **slightly above** for best visibility of the eyes.
+-  Ensure **adequate lighting** and **avoid occlusion** (e.g., hands/glasses).
+-  Use a **clean webcam lens** to avoid blurring or misclassification.
 
 ---
 
-## 🔧 Tech Stack
+##  Tech Stack
 
 - TensorFlow / Keras (MobileNetV2 model)
 - OpenCV (Face and Eye Detection)
